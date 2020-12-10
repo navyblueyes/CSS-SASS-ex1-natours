@@ -15,9 +15,11 @@
         <!-- --  Computed Value =  relative values converted to display (1.5rem * 16px[default] = 24px) -->
         <!-- --  Used Value =  final calculation based on layout -->
         <!-- --  Actual Value =  UsedValue+device/browser restrictions -->
-
-
-        
+        <!-- CSS - box model / box type [inline, block, inline-block] / position / stacking -->
+        <!-- -- box type   [block take up entire horizontal; inline aligns horiz w/out box-model; inline-block aligns horiz w/ box model] -->
+        <!-- -- .block__element--modifer   recipe__btn--round   profile__hero--dark -->
+        <!-- -- 7-1 pattern = 7 different folders for partial SASS files / 1 main SASS to import -->
+        <!-- ---- [base/, components/, layout/, pages/, themes/, abstracts/, vendors/] -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -31,15 +33,15 @@
     </head>
     <body>
         <header class="header">
-            <div class="logo-box">
-                <img src="img/logo-white.png" alt="Logo" class="logo">
+            <div class="header__logo-box">
+                <img src="img/logo-white.png" alt="Logo" class="header__logo">
             </div>
-            <div class="text-box">
+            <div class="header__text-box">
                 <h1 class="heading-primary">
-                    <span class="heading-primary-main">Outdoors</span>
-                    <span class="heading-primary-sub">is where life happens</span>
+                    <span class="heading-primary--main">Outdoors</span>
+                    <span class="heading-primary--sub">is where life happens</span>
                 </h1>
-                <a href="#" class="btn btn-white btn-animated">Discover our tours</a>
+                <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header>
 
