@@ -102,3 +102,28 @@ Media Queries
   - Implement `:not` pseudo-class
   - Implement `calc()` operations
 
+
+// Think Build Architect
+
+Next sections [1 block; two inline-block]
+  - Colored ALL CAPS Header 
+  - 2 Paragraphs with all caps titles
+  - Colored Button link
+  - Three pictures with box shadows
+
+Animations
+  - Hover animation for 
+    1. Main Header
+    1. Link
+  - Hover image with border
+
+Colors
+  - egg shell gray background
+
+Think 7-1 Organization
+  - Typography
+    - Header + paragraph headers
+  - Button
+  - Grid/Layout
+  - Component 
+    - Picture zoomer
