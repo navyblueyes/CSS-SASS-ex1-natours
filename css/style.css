@@ -76,6 +76,9 @@ body {
     animation-timing-function: ease-in-out; }
 
 /*  ::after pseudo-elemnet and transition property  */
+.grid-test {
+  color: black; }
+
 .btn {
   /* transition all => means all named transitions will be activated    */ }
   .btn, .btn:link, .btn:visited {

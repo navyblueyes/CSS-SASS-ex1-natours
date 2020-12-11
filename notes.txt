@@ -81,3 +81,24 @@ doesn't allow for $arguments
 }
 
 why placeholder? when compiled... it combines for a better minimalism... best for those with NO ARGUMENT
+
+
+////// Design Principles
+
+Fluid Layout
+  use percentage vs pixels
+
+Flexible images
+  not as easy as text
+  ensure proper dimensions
+
+Media Queries
+  Change styles on certain breakpoints
+
+
+// Flex Layout  
+  - Implement a simple grid
+  - Set Attribute selectors
+  - Implement `:not` pseudo-class
+  - Implement `calc()` operations
+
