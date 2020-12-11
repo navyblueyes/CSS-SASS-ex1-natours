@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* border-box forces padding/margin into total height/width   */
+
+html {
+  font-size: 62.5%;
+}
+/* html = highest class that all rem will refer to
+      utilizing % to allow user to specify font px   */
+/* set document-wide 1rem to 10px */
+
+
+
+body {
+  box-sizing: border-box;
+}
