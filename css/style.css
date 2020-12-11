@@ -14,7 +14,6 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
   line-height: 1.7;
   color: #fff;
   padding: 3rem;
@@ -23,9 +22,9 @@ body {
 .header {
   height: 95vh;
   width: 100vw;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8), url(../img/hero.jpg));
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
 
