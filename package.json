@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "CSS/SASS execise - landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navyblueyes/CSS-SASS-ex1-natours.git"
+  },
+  "author": "Michael Minkoff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navyblueyes/CSS-SASS-ex1-natours/issues"
+  },
+  "homepage": "https://github.com/navyblueyes/CSS-SASS-ex1-natours#readme",
+  "devDependencies": {
+    "node-sass": "npm:undefined@^"
+  }
+}

@@ -201,3 +201,92 @@ body {
   animation-fill-mode: backwards;
 }
 /* animationName animationDuration animationType animationDelay */
+
+
+/*
+Varables
+    reusable values
+Operators
+    mathematical operators
+Partials
+    importable CSS files
+Mixins
+    Reusable CSS code
+Functions
+    Mixins that produce usable value
+Extends
+    inheritable declarations for selectors
+Control directives
+    Conditionals and Loops for CSS
+
+*/
+
+/* float left / float right on the same line!!!!!
+
+add to parent element...
+nav::after {
+  content: "";
+  clear: both;
+  display: table
+}
+
+.......within SASS.......
+nav {
+  ...
+  
+  &::after {
+  content: "";
+  clear: both;
+  display: table
+  }
+
+  ... hover darken trick
+  &:hover {
+    background-color: darken($color-secondary, 15%)
+  }
+}
+
+..... within SASS mixin .....
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table
+  }
+}
+
+
+.... implementing mixin....
+@include clearfix
+
+
+.... good mixin for buttons ...
+@mixin buttonMixin($color) {
+  text-decoration: none;
+  color: $color;
+  border-radius: 100px;
+}
+
+.... function
+@function divide($a, $b) {
+  @return $a / $b;
+}
+
+.... %placeholder and @extend [similar to @mixin and @include]
+doesn't allow for $arguments
+
+%btn-placeholder {
+  display: inline-block;
+  text-align: center;
+  @include buttonMixin($secondaryColor);
+}
+
+.btn-main {
+  &:link {
+    @extend %btn-placeholder
+    background-color: $someOtherColor;
+  }
+}
+
+why placeholder? when compiled... it combines for a better minimalism... best for those with NO ARGUMENT
+*/
