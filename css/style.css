@@ -106,8 +106,14 @@ body {
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 .btn {
   /* transition all => means all named transitions will be activated    */ }
@@ -118,7 +124,8 @@ body {
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
-    position: relative; }
+    position: relative;
+    font-size: 1.6rem; }
   .btn:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem, rgba(0, 0, 0, 0.2); }
