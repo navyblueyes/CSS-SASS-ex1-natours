@@ -125,5 +125,6 @@ Think 7-1 Organization
     - Header + paragraph headers
   - Button
   - Grid/Layout
+    - header + 2 columns
   - Component 
     - Picture zoomer
