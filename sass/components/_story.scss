@@ -1,6 +1,6 @@
 .story {
     width: 75%;
-    margin: 0 auto;
+    margin: 6rem auto;
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
     background-color: $color-white;
     border-radius: 3px;
@@ -28,8 +28,9 @@
 
     &__img {
         height: 100%; 
-        transform: skewX(12deg) translateX(-4rem);
+        transform: skewX(12deg) translateX(-4rem) scale(1.4);
         backface-visibility: hidden;
+        transition: all 0.4s;
     }
 
     &__caption {
@@ -52,6 +53,7 @@
     }
 
     &:hover &__img {
-
+        transform: skewX(12deg) translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
     }
 }
