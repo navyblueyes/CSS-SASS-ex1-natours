@@ -334,14 +334,22 @@ body {
   background-color: #fff;
   border-radius: 3px;
   padding: 6rem;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: #000;
+  transform: skewX(-12deg); }
   .story__shape {
     width: 15rem;
     height: 15rem;
     float: left;
     background-color: red;
+    -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%); }
+    -webkit-clip-path: circle(35% at 50% 50%);
+    clip-path: circle(35% at 50% 50%);
+    transform: translateY(-2rem) skewX(12deg); }
+  .story__img {
+    height: 100%;
+    transform: skewX(12deg); }
 
 .header {
   height: 95vh;

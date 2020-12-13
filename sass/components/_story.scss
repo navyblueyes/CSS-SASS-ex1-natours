@@ -6,18 +6,25 @@
     border-radius: 3px;
     padding: 6rem;
     font-size: $default-font-size;
-    color: rgba($color-black);
+    color: $color-black;
+    transform: skewX(-12deg);
+
 
     &__shape {
         width: 15rem;
         height: 15rem;
         float: left;
         background-color: red;
-        //-webkit-shape-outside: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
 
-        //-webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(40% at 50% 50%);
-        transform: translateX(-3rem)
+        -webkit-clip-path: circle(35% at 50% 50%);
+        clip-path: circle(35% at 50% 50%);
+        transform: translateY(-2.0rem) skewX(12deg);
+    }
+
+    &__img {
+        height: 100%; 
+        transform: skewX(12deg);
     }
 }
