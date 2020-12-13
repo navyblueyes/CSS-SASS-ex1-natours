@@ -24,18 +24,18 @@
         &--front {
             background-color: $color-white;
         }
-
+ 
         &--back {
             transform: rotateY(-180deg);
             
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
-            &--2 {
-                background-image: linear-gradient(to right bottom, rgba($color-primary-light,.85), rgba($color-primary-dark,.85));
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
             }
-            &--3 {
-                background-image: linear-gradient(to right bottom, rgba($color-tertiary-light,.85), rgba($color-tertiary-dark,.85));
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
             }
         }
     }
@@ -59,6 +59,8 @@
         background-blend-mode: color;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
         
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../../img/nat-5.jpg);
