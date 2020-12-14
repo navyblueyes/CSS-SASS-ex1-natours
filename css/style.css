@@ -139,7 +139,7 @@ body {
     .btn:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
-  .btn:active {
+  .btn:active, .btn:focus {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem, rgba(0, 0, 0, 0.2); }
   .btn--white {
@@ -166,8 +166,10 @@ body {
   .btn--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards; }
+  .btn--book {
+    left: 20vw; }
 
-.btn-text:link, .btn-text:visited {
+.btn-text, .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
   color: #55c57a;
   display: inline-block;
@@ -389,13 +391,7 @@ body {
     object-fit: cover; }
 
 .form {
-  color: #000;
-  /*
-    &__
-    &__
-    &__
-    &__
-    */ }
+  color: #000; }
   .form__group:not(:last-child) {
     margin-bottom: 2rem; }
   .form__input {
@@ -431,13 +427,17 @@ body {
     visibility: hidden;
     transform: translateY(-4rem); }
   .form__radio-group {
-    width: 40%;
-    display: inline-block; }
+    width: 50%;
+    display: inline-block;
+    margin: .5rem 0rem;
+    padding: .5rem; }
+  .form__radio-input {
+    display: none; }
   .form__radio-label {
     font-size: 1.6rem;
     cursor: pointer;
     position: relative;
-    padding-left: 5rem; }
+    padding-left: 3.5rem; }
   .form__radio-button {
     height: 3rem;
     width: 3rem;
@@ -446,7 +446,7 @@ body {
     display: inline-block;
     position: absolute;
     left: 0;
-    top: 0rem; }
+    top: -0.6rem; }
     .form__radio-button::after {
       content: "";
       display: block;
@@ -457,7 +457,11 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: #55c57a; }
+      background-color: #55c57a;
+      opacity: 0;
+      transition: opacity .2s; }
+  .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+    opacity: 1; }
 
 .header {
   height: 95vh;
@@ -544,4 +548,4 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   .book__form {
     width: 60%;
-    padding: 6rem; }
+    padding: 2rem; }
