@@ -59,6 +59,7 @@ body {
   letter-spacing: .2rem;
   transition: all .2s;
   z-index: 2;
+  margin-left: 2rem;
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
