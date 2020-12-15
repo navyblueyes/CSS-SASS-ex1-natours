@@ -218,3 +218,22 @@ Think 7-1 Organization
     - header + 2 columns
   - Component 
     - Picture zoomer
+
+
+Desktop First 
+  using `max-width`
+
+Mobile First
+  using `min-width`
+
+Pro / Conditionals  
+  Mobile
+    optimized for mobile experience
+    reduces web apps to essentials
+    more efficient
+    more content / less aesthetics
+  Con
+    Feels empty on desktop
+    More difficult
+    Less freedom
+    When making prototype... no one likes to see mobile version
