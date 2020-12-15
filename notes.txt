@@ -237,3 +237,15 @@ Pro / Conditionals
     More difficult
     Less freedom
     When making prototype... no one likes to see mobile version
+
+
+breakpoints as width based on
+  1. each apple product....
+      BAD!!! not future proof
+  1. Using groups [s3, s4, iphonex together]
+      Decent
+  1. Just set breakpoints, no specific 
+      Perfect
+
+Sampling of widths
+  phone -- 600 -- tablet[portrait] -- 900 -- tablet[landscape] -- 1200 -- desktop -- 1800 -- bg desktop

@@ -14,3 +14,44 @@
     transform: translate(-50%, -50%);
 }
 
+// Media Query's
+/* initial setup
+0 - 600:        phone 
+600 - 900       tablet portrait
+900 - 1200      tablet landscape
+1200 - 1800     normal
+1800 +          big desktop
+
+$breakpoint options
+- r-phone
+- r-tab-port
+- r-tab-land
+- r-big-desktop
+
+1em = 16px
+*/
+
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == r-phone {
+        @media (max-width: 37.5em) { @content}; //600px
+        //@content allows for mass block of code to be passed in
+        //   https://sass-lang.com/documentation/at-rules/mixin#content-blocks
+    }
+    
+    @if $breakpoint == r-tab-port {
+        @media (max-width: 56.25em) { @content}; //900px
+        
+    }
+    
+    @if $breakpoint == r-tab-land {
+        @media (max-width: 75em) { @content};   //1200px
+        
+    }
+    
+    @if $breakpoint == r-big-desktop {
+        @media (min-width: 112.5em) { @content};   //1800px
+        
+    }
+}

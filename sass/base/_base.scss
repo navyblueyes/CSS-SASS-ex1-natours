@@ -8,7 +8,21 @@
 /* border-box forces padding/margin into total height/width   */
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%;   //  if 100% 1rem = 16px, the 62.5% will make 1rem = 10px;
+  
+  @include respond(r-phone) {
+    font-size: 50%;   
+  }
+  @include respond(r-tab-port) {
+    font-size: 60%;
+  }
+  @include respond(r-tab-land) {
+    font-size: 50%;   // 1rem = 8px... then 8/16 = 50%
+  }
+  @include respond(r-big-desktop) {
+    font-size: 80%;
+  }
+
 }
 /* html = highest class that all rem will refer to
       utilizing % to allow user to specify font px   */
@@ -20,3 +34,4 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
