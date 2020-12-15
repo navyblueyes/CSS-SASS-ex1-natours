@@ -18,10 +18,10 @@ html {
   @include respond(r-big-desktop) {                            //>1800px
     font-size: 75%;   // 1rem = 12px... then 12/16
   }
-
+  
 }
 /* html = highest class that all rem will refer to
-      utilizing % to allow user to specify font px   */
+utilizing % to allow user to specify font px   */
 /* set document-wide 1rem to 10px */
 
 
@@ -29,5 +29,11 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
+  padding: 3rem;
+  
+  // getting rid of padding when <900px or tablet-portrait
+  @include respond(r-tab-port) {                               //<900px
+    padding: 0;
+  }
 }
 
