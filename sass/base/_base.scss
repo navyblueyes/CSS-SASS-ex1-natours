@@ -9,18 +9,14 @@
 
 html {
   font-size: 62.5%;   //  if 100% 1rem = 16px, the 62.5% will make 1rem = 10px;
-  
-  @include respond(r-phone) {
-    font-size: 50%;   
+  @include respond(r-tab-land) {                               //<1200px
+    font-size: 56.25%;   // 1rem = 9px... then 9/16 = 56.25% 
   }
-  @include respond(r-tab-port) {
-    font-size: 60%;
-  }
-  @include respond(r-tab-land) {
+  @include respond(r-tab-port) {                               //<900px
     font-size: 50%;   // 1rem = 8px... then 8/16 = 50%
   }
-  @include respond(r-big-desktop) {
-    font-size: 80%;
+  @include respond(r-big-desktop) {                            //>1800px
+    font-size: 75%;   // 1rem = 12px... then 12/16
   }
 
 }
