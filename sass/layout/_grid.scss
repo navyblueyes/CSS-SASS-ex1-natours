@@ -6,8 +6,13 @@
         margin-bottom: $gutter-vertical;
 
         @include respond(r-tab-port) {                               //<900px
-            margin-right: $gutter-vertical-small;
+            margin-bottom: $gutter-vertical-small;
         }
+    }
+
+    @include respond(r-tab-port) {                               //<900px
+        max-width: 50rem;
+        padding: 0 3rem;
     }
 
     @include clearfix;

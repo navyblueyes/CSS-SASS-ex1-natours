@@ -16,6 +16,14 @@
         text-align: center;
         cursor: pointer;
         transition: transform 1s;
+        @include respond(r-tab-port) {                               //<900px
+            top: 4rem;
+            right: 4rem;
+        }
+        @include respond(r-phone) {                               //<600px
+            top: 3rem;
+            right: 3rem;
+        }
     }
     &__background {
         height: 6rem;
@@ -27,7 +35,15 @@
         z-index: 100;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         transition: transform .8s;
-
+        
+        @include respond(r-tab-port) {                               //<900px
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+        @include respond(r-phone) {                               //<600px
+            top: 3.5rem;
+            right: 3.5rem;
+        }
         // transform: scale(80);
     }
     &__nav {

@@ -578,6 +578,11 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      width: 100% !important; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -598,7 +603,11 @@ body {
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
-        margin-right: 6rem; } }
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -631,9 +640,16 @@ body {
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        width: 100%;
+        float: none; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -645,6 +661,9 @@ body {
     text-align: center;
     left: 5vw;
     position: relative; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -668,6 +687,10 @@ body {
     text-align: center;
     left: 5vw;
     position: relative; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
 
 .navigation__checkbox {
   display: none; }
@@ -685,6 +708,14 @@ body {
   text-align: center;
   cursor: pointer;
   transition: transform 1s; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -696,6 +727,14 @@ body {
   z-index: 100;
   background-image: radial-gradient(#7ed56f, #28b485);
   transition: transform .8s; }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
