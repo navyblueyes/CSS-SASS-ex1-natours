@@ -7,6 +7,11 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .16);
     transition: transform .3s;
+
+    @include respond(r-tab-port) {
+        padding: 2rem;
+    }
+    
     &__icon {
         color: transparent;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
@@ -14,6 +19,9 @@
         -webkit-background-clip: text;
         margin-bottom: .5rem;
         font-size: 6rem;
+        @include respond(r-tab-port) {
+            margin-bottom: 0;
+        }
     }
     &__text {
 
