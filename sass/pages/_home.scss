@@ -3,23 +3,30 @@
     padding: 25rem 0;
     margin-top: -20vh;
     color: $color-black;
+    
+    @include respond(r-tab-port) {                               //<900px
+        padding: 20rem 0;   
+    }
 }
 
 .section-features {
     padding: 20rem 0;
     background-image: linear-gradient(
-      to right bottom, 
-      rgba($color-primary-light, 0.8), 
-      rgba($color-primary-dark, 0.8)),
+        to right bottom, 
+    rgba($color-primary-light, 0.8), 
+    rgba($color-primary-dark, 0.8)),
     url(../img/nat-4.jpg);
     background-size: cover;
     margin-top: -14rem;
-
+    
     transform: skewY(-7deg);
     
     & > * {
         transform: skewY(7deg);
         
+    }
+    @include respond(r-tab-port) {                               //<900px
+        padding: 15rem 0;   
     }
 }
 
@@ -27,17 +34,26 @@
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;
     margin-top: -10rem;
+    @include respond(r-tab-port) {                               //<900px
+        padding: 20rem 0 10rem 0; 
+    }
 }
 
 .section-stories {
     padding: 15rem 0;
     background-color: $color-grey-light-1;
     position: relative;
+    @include respond(r-tab-port) {                               //<900px
+        padding: 10rem 0; 
+    }
 }
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    @include respond(r-tab-port) {                               //<900px
+        padding: 10rem 0; 
+    }
 }
 
 .book {

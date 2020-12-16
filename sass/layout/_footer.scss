@@ -11,10 +11,9 @@
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
-                
+        
         @include respond(r-tab-port) {                               //<900px
-            width: 100%;
-            float: none;
+            margin-bottom: 6rem;
         }
     }
     &__logo {

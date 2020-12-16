@@ -240,7 +240,7 @@ Pro / Conditionals
 
 
 breakpoints as width based on
-  1. each apple product....
+  1. each apple product...
       BAD!!! not future proof
   1. Using groups [s3, s4, iphonex together]
       Decent
