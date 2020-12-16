@@ -1,5 +1,4 @@
 .card {
-
     // Functionality
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -52,7 +51,7 @@
 
 
 
-    // Styling
+    // FRONT -- Styling
     &__picture {
         background-size: cover;
         height: 23rem;
@@ -126,7 +125,7 @@
     }
 
 
-    // Styling
+    // BACK Styling
     &__cta {
         top: 50%;
         left: 50%;
@@ -148,5 +147,56 @@
     &__price-value {
         font-size: 6rem;
         font-weight: 100;
+    }
+
+
+//-+-+-+-+-+-+-+-+ CUSTOM CARD FOR SCREENS <900px   -+-+-+-+-+-+-+-+
+    @include respond(r-tab-port) {
+        height: auto;
+        color: $color-black;
+        
+        &__side {
+            height: auto;
+            transition: all .8s ease;
+    
+            position: relative;
+            border-radius: 3px;
+            overflow: hidden;
+     
+            &--back {
+                //getting rid of rotation; merely moviing it below front
+                transform: rotateY(-180deg);
+                
+            }
+        } 
+        
+        &:hover &__side--front {
+            //getting rid of rotation; merely moviing it below front
+            transform: rotateY(0);
+        }
+        &:hover &__side--back {
+            //getting rid of rotation; merely moviing it below front
+            transform: rotateY(0);   
+        }
+    
+    
+    
+    
+        // Styling
+        &__cta {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+        }
+    
+        &__price-box {
+            margin-bottom: 8rem;
+        }
+        &__price-value {
+            font-size: 6rem;
+        }
+
     }
 }
