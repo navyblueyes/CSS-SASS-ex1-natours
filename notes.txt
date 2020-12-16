@@ -275,4 +275,8 @@ Responsive images
     Resolution switching -- phone/mobile
     Density switching ----- iphone retina vs 1080
     Art direction --------- changing picture because landscape pictures don't make sense on portrait
-    
+
+Build process 
+  sass 
+    ++compiles++
+  style.comp.css
