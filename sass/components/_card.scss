@@ -18,7 +18,7 @@
         border-radius: 3px;
         overflow: hidden;
 
-        box-shadow: 0 1.5 rem 4rem rgba($color-black, .15);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
             background-color: $color-white;
@@ -26,7 +26,6 @@
  
         &--back {
             transform: rotateY(-180deg);
-            
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
@@ -154,19 +153,20 @@
     @include respond(r-tab-port) {
         height: auto;
         color: $color-black;
+        background-color: $color-white;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
         
         &__side {
             height: auto;
-            transition: all .8s ease;
-    
             position: relative;
-            border-radius: 3px;
             overflow: hidden;
-     
+            box-shadow: none;
+
             &--back {
                 //getting rid of rotation; merely moviing it below front
-                transform: rotateY(-180deg);
-                
+                transform: rotateY(0deg);
+                clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
             }
         } 
         
@@ -174,12 +174,11 @@
             //getting rid of rotation; merely moviing it below front
             transform: rotateY(0);
         }
-        &:hover &__side--back {
-            //getting rid of rotation; merely moviing it below front
-            transform: rotateY(0);   
+    
+        // Front
+        &__details {
+            padding: 0rem;
         }
-    
-    
     
     
         // Styling
@@ -189,10 +188,14 @@
             left: 0;
             transform: translate(0);
             width: 100%;
+            padding: 3rem 4rem 2rem 4rem;
         }
     
         &__price-box {
-            margin-bottom: 8rem;
+            margin-bottom: 1rem;
+        }
+        &__price-only {
+            font-size: 2rem;
         }
         &__price-value {
             font-size: 6rem;

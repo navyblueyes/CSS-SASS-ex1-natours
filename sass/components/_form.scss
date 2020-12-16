@@ -15,19 +15,24 @@
         width: 70%;
         display: block;
         transition: all .3s;
-
+        
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
             border-bottom: 3px solid $color-primary;
         }
-
+        
         &:focus:invalid {
             border-bottom: 3px solid $color-secondary-dark;
         }
-
+        
         &::-webkit-input-placeholder {
             color: $color-grey-dark-2;
+        }
+
+        @include respond(r-tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
         }
     }
 
@@ -46,12 +51,16 @@
         visibility: hidden;
         transform: translateY(-4rem)
     }
-
+    
     &__radio-group {
         width: 50%;
         display: inline-block;
         margin: .5rem 0rem;
         padding: .5rem;
+        @include respond(r-tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
 
     }
     &__radio-input {

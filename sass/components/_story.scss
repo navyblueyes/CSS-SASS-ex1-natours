@@ -12,27 +12,43 @@
     p, h3 {
         transform: skewX(12deg);
     }
-
+    
+    @include respond(r-tab-port) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+    
     &__shape {
         width: 15rem;
         height: 15rem;
         float: left;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
-
+        
         -webkit-clip-path: circle(35% at 50% 50%);
         clip-path: circle(35% at 50% 50%);
         transform: translateY(-2.0rem) skewX(12deg);
         position: relative;
     }
-
+    
     &__img {
         height: 100%; 
-        transform: skewX(12deg) translateX(-4rem) scale(1.4);
+        transform: translateX(-4rem) scale(1.4);
         backface-visibility: hidden;
         transition: all 0.4s;
     }
 
+    @include respond(r-phone) {
+        transform: skewX(0deg);
+        p, h3,&__shape {
+            transform: skewX(0deg);
+        }
+        &__img {
+            transform: translateX(-4rem);
+        }
+    }
+    
     &__caption {
         position: absolute;
         top: 50%;
